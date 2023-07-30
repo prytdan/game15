@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Game15" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="fontFamily">@font/abril_fatface</item>
+    </style>
+
+    <style name="button_style">
+
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="contentDescription">@string/cube</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/unready_cell_form</item>
+
+    </style>
+
+</resources>

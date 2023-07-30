@@ -1,0 +1,39 @@
+<resources>
+    <!-- app related strings -->
+    <string name="app_name">BARLEY-BREAK</string>
+    <string name="cube">cube</string>
+    <string name="one">1</string>
+    <string name="number_of_moves">Number of moves:</string>
+    <string name="choose_hardness_level">Choose difficulty level:</string>
+    <string name="hardness_level_easy">Easy</string>
+    <string name="hardness_level_medium">Medium</string>
+    <string name="hardness_level_hard">Hard</string>
+    <string name="_0">0</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_7">7</string>
+    <string name="_6">6</string>
+    <string name="_5">5</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_10">10</string>
+    <string name="_11">11</string>
+    <string name="_12">12</string>
+    <string name="_13">13</string>
+    <string name="_14">14</string>
+    <string name="_15">15</string>
+    <string name="note_text">
+        The popular puzzle "Barley-break" (also known as "15 puzzle" or "Sliding Puzzle") was invented in the late 19th century.\n
+        The classic game board is a 4x4 grid of cells, with numbers from 1 to 15 arranged in order from left to right and top to bottom. The last cell is empty.\n
+        The cells are shuffled in a specific way, and the player\'s task is to restore their original correct arrangement. This can only be done by moving another adjacent cell (located to the left, right, above, or below the empty cell) into that empty space.\n\n
+        * Cells on their correct place are highlighted with green color, otherwise they are colored white.\n
+        ** The level of difficulty is determined by the number of cells shuffles among themselves.\n
+        Easy level - 50 shuffles.\n
+        Medium level - 150 shuffles.\n
+        Hard level - 500 shuffles.\n
+</string>
+    <string name="win">Congratulation! You have done it!</string>
+    <string name="back_to_menu_option">No, to menu</string>
+    <string name="continue_game_option">Yes, let\'s do it again!</string>
+</resources>

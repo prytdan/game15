@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".viewviewmodel.fragments.menu.MenuFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/name_of_app"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_32"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/level_of_hardness"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/level_of_hardness"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_32"
+        android:text="@string/choose_hardness_level"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/easy_level_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_of_app" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/easy_level_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_32"
+        android:fontFamily="@font/abril_fatface"
+        android:padding="10dp"
+        android:text="@string/hardness_level_easy"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:backgroundTint="@color/easy_level"
+        app:cornerRadius="@dimen/margin_32"
+        app:layout_constraintBottom_toTopOf="@+id/medium_level_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level_of_hardness"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/margin_3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/medium_level_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_32"
+        android:padding="@dimen/margin_10"
+        android:text="@string/hardness_level_medium"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:backgroundTint="@color/medium_level"
+        app:cornerRadius="@dimen/margin_32"
+        app:layout_constraintBottom_toTopOf="@+id/hard_level_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easy_level_button"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/margin_3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/hard_level_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_32"
+        android:padding="@dimen/margin_10"
+        android:text="@string/hardness_level_hard"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:backgroundTint="@color/hard_level"
+        app:cornerRadius="@dimen/margin_32"
+        app:layout_constraintBottom_toTopOf="@id/question_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medium_level_button"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/margin_3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_32"
+        android:backgroundTint="@color/dark_blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_question_mark_24"
+        app:backgroundTint="@color/white"
+        app:borderWidth="@dimen/margin_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/hard_level_button"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
